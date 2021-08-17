@@ -1,0 +1,7 @@
+Poin Yang harus diperbaiki untuk CommentController: 
+-) Untuk UserRole Subscriber dan UserRole User di function/method index , pada saat index querry harus hanya bisa menampilkan comment yang hanya bisa user tersebut approve/unapprove. Dan bukan mengindex user lain yang bisa dia approve/unapprove. Baik pada saat user tsb login & tidak.
+Poin yang harus diperbaiki untuk CommentRepliesController:
+-) Untuk UserRole Subscriber dan UserRole User di function/method index , pada saat index querry harus hanya bisa menampilkan commentreplied yang hanya bisa user tersebut approve/unapprove. Dan bukan mengindex user lain yang bisa dia approve/unapprove. Baik pada saat user tsb login & tidak.
+Beberapa poin Untuk HomeController terutama pada saat menampilkan views('blog.show') dan views('blog.mainpost').
+-) HomeController pada kolom section Count Kategori pada saat di klik harus bisa mengindex menampilkan postingan blog sesuai jenis kategorinya.
+-) HomeController pada saat index postingan blog, setiap blognya harus bisa menampilkan total count likes dan total count comment&commentreplied dari masing-masing setiap blogpost. Karena saat ini masih menampilkan total keseluruhan like dan comment&commentreplied dari seluruh total postingan blogpost.  
