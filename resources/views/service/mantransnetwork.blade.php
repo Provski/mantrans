@@ -255,7 +255,7 @@
                             <div class="bg-extra-dark-gray icon-round-medium"><i class="icon-chat icon-medium text-white-2"></i></div>
                         </div>
                         <div class="text-extra-dark-gray text-uppercase text-small font-weight-600 alt-font margin-5px-bottom">Mari Bicara</div>
-                        <p class="mx-auto">Phone: 62-877-005-5-8777</p>
+                        <p class="mx-auto">Phone: 62-896-954-4-5466</p>
                     </div>
                     <!-- end contact info item -->
                     
@@ -265,7 +265,7 @@
                             <div class="bg-extra-dark-gray icon-round-medium"><i class="icon-envelope icon-medium text-white-2"></i></div>
                         </div>
                         <div class="text-extra-dark-gray text-uppercase text-small font-weight-600 alt-font margin-5px-bottom">E-mail Kami</div>
-                        <p class="mx-auto"><a href="mailto:dwianggoro@outlook.co.id">dwianggoro@outlook.co.id</a><br><a href="mailto:mantis.vouge@gmail.com">mantis.vouge@gmail.com</a></p>
+                        <p class="mx-auto"><a href="mailto:jaelani@mantrans.id">jaelani@mantrans.id</a><br><a href="mailto:dwi.anggoro@outlook.co.id">dwi.anggoro@outlook.co.id</a></p>
                     </div>
                     <!-- end contact info item -->
                     
