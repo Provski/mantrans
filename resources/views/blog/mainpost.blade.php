@@ -23,7 +23,7 @@
             <div class="col-12 col-md-4 d-flex flex-column justify-content-center name padding-15px-all">
                 <div>
                     <img src="{{ url('storage/images/author/'. $post->author->post_author) }}" alt="" class="rounded-circle width-30px">
-                    <span class="text-medium-gray text-uppercase text-extra-small alt-font padding-10px-left">by <a href="{{ route('blog.about-author', $post->author->id) }}" class="text-medium-gray">{{ $post->author->author }}</a></span>
+                    <span class="text-medium-gray text-uppercase text-extra-small alt-font padding-10px-left">by <a href="{{ route('blog.about-author', $post->author->slug) }}" class="text-medium-gray">{{ $post->author->author }}</a></span>
                 </div>
             </div>
             <div class="col-12 col-md-4 d-flex flex-column justify-content-center name border-lr padding-15px-all border-color-extra-light-gray sm-no-border">

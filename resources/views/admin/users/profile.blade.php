@@ -27,7 +27,7 @@
                                         <div class="card-body">
                                         </div>
                                     </div>
-                                    <label for="file">Avatar</label>
+                                    <label for="file">Avatar max 300KB | dimension image ratio suggest 1:1</label>
                                     <input id="avatar" type="file" class="form-control-file @error('avatar') is-invalid @enderror" name="avatar" >
                                     @error('avatar')
                                         <div class="invalid-feedback">{{ $message }}</div>

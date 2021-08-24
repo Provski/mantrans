@@ -152,11 +152,23 @@
                     </li>
 
                     <!-- Nav Item - Messages -->
-                    @include('admin.partials.topbar-message-notification')
-
+                    @if(auth()->user()->userHasRole('Admin'))
+                        @include('admin.partials.topbar-message-notification')
+                    @elseif(auth()->user()->userHasRole('Manager'))
+                        @include('admin.partials.topbar-message-notification')
+                    @elseif(auth()->user()->userHasRole('Author'))
+                        @include('admin.partials.topbar-message-notification')
+                    @endif
+                    
 
                     <!-- Nav Item - Messages -->
-                    @include('admin.partials.topbar-messagereplied-notification')
+                    @if(auth()->user()->userHasRole('Admin'))
+                        @include('admin.partials.topbar-messagereplied-notification')
+                    @elseif(auth()->user()->userHasRole('Manager'))
+                        @include('admin.partials.topbar-messagereplied-notification')
+                    @elseif(auth()->user()->userHasRole('Author'))
+                        @include('admin.partials.topbar-messagereplied-notification')
+                    @endif
 
 
                     <!-- Divider -->

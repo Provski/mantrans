@@ -42,7 +42,7 @@ class UserController extends Controller
         $request->validate([
             'name'      => 'required|string|max:50',
             'email'     => 'required|email|max:100',
-            'avatar'    => 'required|file:jpg,png|max:1000'
+            'avatar'    => 'required|file:jpg,png|max:300'
         ]);
 
         $user  = User::where('id',$id)->first();
@@ -104,15 +104,15 @@ class UserController extends Controller
         // get current logged in user
         $user   = Auth::user();
         
-        // if (auth()->user()->userHasRole('Admin')) {
-            // $user   = User::where('id',$id)->first();
-            // $roles  = Role::get();
-            // } elseif (auth()->user()->userHasRole('Manager')) {
-                // $user = User::where('id', $id)->first();
-                // $roles  = Role::get();
-                    // } else {
-                        // abort(403, 'You are not authorized');
-                    // }
+        if (auth()->user()->userHasRole('Admin')) {
+            $user   = User::where('id',$id)->first();
+            $roles  = Role::get();
+            } elseif (auth()->user()->userHasRole('Manager')) {
+                $user = User::where('id', $id)->first();
+                $roles  = Role::get();
+                    } else {
+                        abort(403, 'You are not authorized');
+                    }
         $user   = User::where('id',$id)->first();
         $roles  = Role::get();
         return view('admin.users.edit', compact('user','roles'));

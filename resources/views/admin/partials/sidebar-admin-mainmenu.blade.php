@@ -6,8 +6,16 @@
     <!-- Nav Item - Users Collapse Menu -->
     @include('admin.partials.sidebar-user')
 
+    
     <!-- Nav Item - Posts Collapse Menu -->
+    @if(auth()->user()->userHasRole('Admin'))
         @include('admin.partials.sidebar-commentsandreplies')
+    @elseif(auth()->user()->userHasRole('Manager'))
+        @include('admin.partials.sidebar-commentsandreplies')    
+    @elseif(auth()->user()->userHasRole('Author'))
+        @include('admin.partials.sidebar-commentsandreplies')
+    @endif
+
 
     <!-- Nav Item - Posts Collapse Menu -->
     @if(!auth()->user()->userHasRole('User'))
